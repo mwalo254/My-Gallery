@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{{ block.super}}
+
+ {% block content %}
+
+ <div class="container">
+
+   <div class="row">
+     <img src="{{image.image.url}}"  class="img-responsive" alt="">
+   </div>
+
+   <div class="row">
+     <h1 class="text-center">{{image.image_name}}</h1>
+   </div>
+
+   <div class="row">
+     <p>{{image.img_location}}</p>
+   </div>
