@@ -19,7 +19,7 @@ class LocationTestClass(TestCase):
         locations = Location.get_locations()
         self.assertTrue(len(locations) > 1)
 
-     def test_update_location(self):
+    def test_update_location(self):
         new_location = 'paris'
         self.location.update_location(self.location.id, new_location)
         changed_location = Location.objects.filter(name='paris')
